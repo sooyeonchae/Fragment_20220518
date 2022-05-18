@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_first.*
 import net.soozip.fragment_20220518.R
 
-class FirstFragment : Fragment() {
+class SecondFragment : Fragment() {
 
     //어떤 xml을 끌어다 사용할 지 결정하는 함수
     override fun onCreateView(
@@ -18,14 +18,11 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        return inflater.inflate(R.layout.fragment_second, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        btnLog.setOnClickListener{
-            Log.d("프레그먼트화면", "프래그먼트 화면에서 로그 찍기!")
-        }
     }
 }
